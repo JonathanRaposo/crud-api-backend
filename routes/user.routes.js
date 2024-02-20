@@ -90,7 +90,7 @@ router.put('/users/:id', (req, res) => {
 router.delete('/users/:id', (req, res) => {
     const { id } = req.params;
     users = users.filter((user) => user.id !== id);
-    res.json({ message: 'User id no.' + id + ' was succeffully removed.' });
+    res.json({ message: 'User id no.' + id + ' was successfully removed.' });
 })
 
 export default router;
