@@ -1,8 +1,8 @@
 const users = [
-    { id: '1', name: 'Robert Lowe', age: 30, email: 'robert@gmail.com' },
-    { id: '2', name: 'Stephen Jenkins', age: 40, email: 'Stephen@gmail.com' },
-    { id: '3', name: 'Steward Little', age: 20, email: 'Steward@gmail.com' },
-    { id: '4', name: 'Peter Gabriel', age: 60, email: 'peter@gmail.com' },
+    { id: '1', fullName: 'Brad Hargreaves', age: 52, email: 'brad71@gmail.com' },
+    { id: '2', fullName: 'Stephen Jenkins', age: 60, email: 'Stephen64@gmail.com' },
+    { id: '3', fullName: 'Keving Cadogan', age: 53, email: 'kevin70@gmail.com' },
+    { id: '4', fullName: 'Arion Salazar', age: 53, email: 'arion70@gmail.com' },
 
 ]
 

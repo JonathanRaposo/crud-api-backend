@@ -17,7 +17,7 @@ app.use('/api', userRouter);
 
 // error handling middleware
 app.use((req, res, next) => {
-    res.send({ message: 'Resourse not found' })
+    res.status(404).json({ message: 'Page not found.' })
 })
 
 export default app;
