@@ -6,7 +6,7 @@ let users = data;
 
 // USER ROUTE Controllers 
 
-const AddUser = (req, res) => {
+const addUser = (req, res) => {
     const { fullName, age, email } = req.body;
 
     let error = [];
@@ -86,12 +86,11 @@ const updateUser = (req, res) => {
 
 }
 
-const DeleteUser = (req, res) => {
+const deleteUser = (req, res) => {
     const { id } = req.params;
 
     // Ensure user exist:
     const foundUser = users.find((user) => user.id === id);
-    console.log('is user found: ', foundUser);
     if (!foundUser) {
         return res.status(404).json({ message: `User with id of ${id} was not found.` })
     }
@@ -100,10 +99,10 @@ const DeleteUser = (req, res) => {
 }
 
 export default {
-    AddUser,
+    addUser,
     getUsers,
     getUser,
     updateUser,
-    DeleteUser
+    deleteUser
 
 }
